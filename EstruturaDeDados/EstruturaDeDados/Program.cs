@@ -39,7 +39,9 @@
 
         //Alterar um elemento no indice especifico
         frutas[4] = "Pêra";
-        //Console.WriteLine("Minha  lista de frutas: ");
+
+        Console.WriteLine();
+        Console.WriteLine("Minha  lista de frutas: ");
         //foreach (string fruta in frutas)
         //{
         //    Console.WriteLine(fruta);
@@ -53,12 +55,32 @@
 
         //Imprimindo a lista novamente 
         Console.WriteLine();
-        //Console.WriteLine("Minha lista de frutas: ");
+        Console.WriteLine("Minha lista de frutas: ");
         //foreach (string fruta in frutas)
         //{
         //    Console.WriteLine(fruta);
         //}
         frutas.ForEach(Console.WriteLine);
 
+        //apagar todos elementos
+        frutas.Clear();
+
+        //trabalhando com dicionario de dados
+        Dictionary<int, string> carros = new Dictionary<int, string>();
+        //adicionar Ddos a um dicionario
+        carros.Add(5, "Corsa");
+        carros.Add(10, "Fusca");
+        carros.Add(2, "FOrd Ka");
+
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+
+        Console.WriteLine("Meu dicionario de Carros ");
+        //imprimir um dicionario de dados
+        foreach (var carro in carros)
+        {
+            Console.WriteLine($"{carro.Key} - {carro.Value}");
+        }
     }
 }
